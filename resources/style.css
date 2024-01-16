@@ -10,9 +10,29 @@ html {
     justify-content: space-between;
     height: 4.3125rem;
     position: fixed;
-    margin: 0.625rem;
     width: 100%;
+    margin: 0 auto;
     border: 1px solid rgb(0, 0, 0);
+}
+
+/* nav left styles */
+
+.menu-icon {
+    width: 1.067rem;
+    padding: 0.625rem;
+    border-radius: 0.9375rem;
+    margin-left: 0.625rem;
+    transition: hover 1s;
+}
+
+.menu-icon:hover {
+    background-color: rgb(217, 217, 217);
+    cursor: pointer;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 5px;
 }
 
 .nav-left li {
@@ -20,29 +40,68 @@ html {
     margin-left: 5px;
 }
 
-/* nav left items */
+/* nav centre styles */
 
-.menu-icon {
-    width: 1.067rem;
-    padding: 0.625rem;
-    border-radius: 0.9375rem;
-    -webkit-border-radius: 0.9375rem;
-    -moz-border-radius: 0.9375rem;
-    -ms-border-radius: 0.9375rem;
-    -o-border-radius: 0.9375rem;
-    margin-left: 0.625rem;
-    transition: hover 1s;
-    -webkit-transition: hover 1s;
-    -moz-transition: hover 1s;
-    -ms-transition: hover 1s;
-    -o-transition: hover 1s;
+.container {
+    display: flex;
 }
 
-.menu-icon:hover {
-    background-color: rgb(217, 217, 217);
+.search-bar {
+    background-color: #fff;
+    width: 500px;
+    height: 40px;
+    border: 1px solid #999;
+    border-radius: 40px 0 0 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 0px 25px;
+    margin: 0;
 }
 
-.logo {
-    width: 120px;
-    margin-bottom: 5px;
+.search-bar:active {
+    box-shadow: 0px 0px 2px blue;
+    border: 1px solid #000;
 }
+
+.search-bar:hover {
+    box-shadow: 0px 0px 2px blue;
+}
+
+.search-btn {
+    border: 1px solid black;
+    height: 40px;
+    width: 64px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.search-btn:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.input {
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.mic {
+    border: 1px transparent;
+    padding: 10px;
+    margin: 0 20px 0 10px;
+    width: 24px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mic:hover {
+    background-color: #ddd;
+}
+
+
