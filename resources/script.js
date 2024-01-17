@@ -1,8 +1,8 @@
 
 const menuButton = document.getElementById(menu);
 
-function openMenu(event) {
-    
-}
+const openMenu = (event) => {
+
+};
 
 menuButton.addEventListener('click', )
