@@ -12,8 +12,16 @@ html {
     position: fixed;
     width: 100%;
     margin: 0 auto;
-    border: 1px solid rgb(0, 0, 0);
 }
+
+main.container {
+    top: 4.3125rem;
+    position: relative;
+}
+
+/* Typography */
+
+
 
 /* nav left styles */
 
@@ -26,7 +34,7 @@ html {
 }
 
 .menu-icon:hover {
-    background-color: rgb(217, 217, 217);
+    background-color: #d9d9d9;
     cursor: pointer;
 }
 
@@ -42,7 +50,7 @@ html {
 
 /* nav centre styles */
 
-.container {
+.flexbox {
     display: flex;
 }
 
@@ -69,7 +77,7 @@ html {
 }
 
 .search-btn {
-    border: 1px solid black;
+    border: 1px solid #999;
     height: 40px;
     width: 64px;
     display: inline-flex;
@@ -87,6 +95,27 @@ html {
     outline: none;
     border: none;
     font-size: 1.2rem;
+    width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+    .search-bar {
+        max-width: 500px;
+        min-width: none;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 617px) {
+    .search-bar {
+        display: none;
+    }
+
+    .search-btn {
+        border: none;
+        border-radius: 50px;
+        width: 50px;
+    }
 }
 
 .mic {
@@ -105,3 +134,67 @@ html {
 }
 
 
+/* Side bar work */
+
+.side-bar {
+    display: inline-block;
+    position: absolute;
+}
+
+.side-bar li, a {
+    text-decoration: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    border-radius: 10px;
+    flex-direction: column ;
+}
+
+.side-bar p {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.side-bar li:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.side-bar a:active {
+    color: inherit;
+}
+
+
+/* Side bar OVERLAY */
+.sb-expanded {
+    position: absolute;
+    display: none;
+    border: 1px solid black;
+    z-index: 3;
+    padding: 0px 10px;
+}
+
+.sb-expanded li {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.sb-expanded p {
+    font-size: 0.9rem;
+    margin-left: 30px;
+}
+
+.sb-expanded li:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 10px 0 10px 10px;
+}
